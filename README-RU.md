@@ -1,133 +1,141 @@
-This article answers the question: how to learn anything with neural networks without putting effort into writing prompts. It presents an interactive terminal-like interface directly inside your AI assistant's chat interface, where you can navigate the conversation with "arrow keys". Also, I'm working on creating an actual terminal app for this (stay tuned).
+# AI-промт как терминал. Протокол Олега-Деминга.
 
-At some point, the thought came to me that with the advent of neural networks, books have become obsolete. The "books" of the future are specially encoded knowledge inside neural networks. Learning should happen through dialogue with neural networks.
+Эта статья отвечает на вопрос: как выучить что угодно с нейросетями, не прикладывая усилий к написанию промтов. Он дает прямо в интерфейсе вашего чата с ИИ ассистентом нечто, очень похожее на Linux-терминал, в котором можно путешествовать по диалогу "стрелочками". Я работаю над настоящим приложением-терминалом для этого промта, но это будет потом.
 
-In practice, it turned out that following such advice is quite difficult. Yes, you can go to a neural network and say "teach me calculus." The problem is that few people know how to ask the right questions. And those who do know understand that it's not simple in itself.
+В какой-то момент в голову пришла мысль, что с появлением нейросетей книги устарели. "Книги" будущего — это специальным образом закодированные знания внутри нейросети. Учиться надо в диалоге с нейросетью.
 
-The second problem is that a neural network is an assistant and advisor, but not a demanding teacher. It won't push you to expand your horizons. And as a student, it's very difficult for you to ask questions about things whose existence is completely unknown to you.
+На практике оказалось, что выполнить такой совет достаточно непросто. Да, ты можешь сходить к нейросети и сказать "научи меня матану". Проблема в том, что задавать правильные вопросы мало кто умеет. А кто умеет — знает, что это само по себе непросто.
 
-Thus was born a prompt that allows you to study new topics easily and effortlessly. You copy-paste it at the beginning of a dialogue and begin an interactive journey.
+Вторая проблема в том, что нейросеть — это помощник и советчик, но не базированный учитель. Она не будет на пинковой тяге расширять твой кругозор. А тебе как ученику очень сложно задать вопрос относительно вещей, существование которых тебе полностью неизвестно.
 
-Perhaps this is the prompt you've been missing to solve all your everyday problems right here and now.
+Так родился промпт, который позволяет изучать новую тему легко и не напрягаясь. Ты копипастишь его в начало диалога и начинаешь интерактивное путешествие.
+
+Возможно, это тот промпт, которого не хватает тебе, чтобы решить все свои бытовые проблемы прямо здесь и сейчас.
 
 ---
 
-## Where to Get the Prompt Text
+## Откуда взять текст промпта
 
-The prompt exists in two variants:
+Промт существует в двух вариантах:
 
-- [**Standard**](https://github.com/anarchic-pro/oleg-deming-protocol/blob/main/OLEG-DEMING-PROTOCOL-STANDARD.md): normal functionality, neural network in helpful assistant mode.
-- [**Roleplay**](https://github.com/anarchic-pro/oleg-deming-protocol/blob/main/OLEG-DEMING-PROTOCOL-ROLEPLAY.md): uncompromising, stubborn neural network tries to stress-test your request by examining it from different angles.
+- [**Стандартный**](https://gitverse.ru/anarchic/oleg-deming-protocol/content/main/OLEG-DEMING-PROTOCOL-STANDARD.md): обычная функциональность, нейросеть в режиме услужливого помощника.
+- [**Ролевой**](https://gitverse.ru/anarchic/oleg-deming-protocol/content/main/OLEG-DEMING-PROTOCOL-ROLEPLAY.md): неуступчивая, упёртая нейросеть пытается проверить твой запрос на прочность, наблюдая его под разными углами.
 
-## How to Use the Prompt
+Файлы выложены на [GitVerse](https://gitverse.ru) — чудесной российской замене GitHub.
 
-- As the first request in your conversation with the neural network, copy-paste the entire prompt as is. Including punctuation marks, line breaks, strange Greek letters — everything else.
-- As the second request, you write: "Do: " followed by your actual request.
+## Как использовать промпт
 
-## What's the Feature
+- Первым запросом в разговоре с нейросетью нужно скопипастить весь запрос как есть. Включая знаки препинания, переносы строк, странные греческие буквы — всё остальное.
+- Вторым запросом ты пишешь: "Do: " и дальше пишешь сам запрос.
 
-This prompt is a universal dialogue starter. Ideally, it doesn't need to be modified, just copy-pasted "as is."
+## Где обсудить
 
-The neural network delivers answers in a clearly structured format.
+У меня есть Телега с нейросетями. 
+Канал: [@tg_1red2black](https://t.me/tg_1red2black), чат: @chat_1red2black(https://t.me/chat_1red2black).
 
-Each element of the structure is tagged in the format:
+## В чём фишка
+
+Этот промпт является универсальным началом диалога. В идеале его не нужно модифицировать, а просто скопипастить "как есть".
+
+Нейросеть отдаёт ответ в чётко структурированном виде.
+
+Каждый элемент структуры подписан тегом в формате:
 
 ```
-[Q1] Perfect plan to become a billionaire in 2025
-[Q2] How not to attract the attention of orderlies
+[Q1] Идеальный план, как стать миллиардером в 2025 году
+[Q2] Как не привлекать внимание санитаров
 ```
 
-For each item, you can execute the command `zoom:Q1` and "dive into" studying that question. You don't need to type a request; the `zoom` command is sufficient. You can dive in as many levels as you want.
+В отношении каждого пункта ты можешь выполнить команду `zoom:Q1` и "провалиться" внутрь изучения этого вопроса. Набирать запрос не нужно, команды `zoom` достаточно. Проваливаться внутрь можно сколько угодно.
 
-If you want to surface — execute the `up` command, if you want to surface to the very top — execute the `root` command.
+Если хочется вынырнуть — выполни команду `up`, если хочется вынырнуть на самый верх — выполни команду `root`.
 
-## Commands for Improving Responses
+## Команды для улучшения ответа
 
-There are two commands for improving responses.
+Есть две команды для улучшения ответа.
 
-`expand` will tell you a bit more about what's already written on screen.
+`expand` расскажет ещё немного про то, что уже написано на экране.
 
-`iterate` will help you look at the question from a different angle.
+`iterate` поможет взглянуть на вопрос под другим углом.
 
-These are the main commands for exploration "within" one level of nesting. You call `expand` several times, and if you don't like the result (it seems too shallow, stupid, wild), you ask it to `iterate`.
+Это основные команды для исследования "внутри" одного уровня вложенности. Ты вызываешь несколько раз `expand`, и если результат тебе не нравится (кажется слишком плоским, тупым, диким), ты просишь сделать `iterate`.
 
-**Important**: you can use `expand` and `iterate` "with parameters." That is, you don't just write "expand" in response, but make a line break after this command and clarify what you'd like to see in the improved prompt.
+**Важно**: ты можешь использовать `expand` и `iterate` "с параметрами". То есть ты пишешь в ответе не просто "expand", а делаешь после этой команды перенос строки и доуточняешь, что ты хотел бы увидеть в улучшенном промпте.
 
-## Superpowers
+## Суперспособности
 
-There are two forbidden commands that can lead to brain explosion. They address the issue of *metacognitive prompt development*. Before we all get taken to the madhouse, let me try to clarify.
+Есть две запретные команды, которые могут привести к взрыву мозга. Они решают вопрос *метакогнитивного развития промпта*. Прежде чем нас всех увезут в дурку, попробую уточнить.
 
-The first command is called `advance`. This is a command for you as a human. It's needed when you understand that you're asking the neural network something stupid, but you can't formulate it better and smarter.
+Первая команда называется `advance`. Это команда для тебя как для человека. Она нужна, когда ты понимаешь, что спрашиваешь у нейросети какую-то глупость, но более хорошо и умно сформулировать не в силах.
 
-The `advance` command takes your original prompt and rewrites it considering all the wisdom you've already learned or clarified yourself during the dialogue. Based on this, `advance` has the most benefit when you've already read something in this conversation with the neural network.
+Команда `advance` берёт твой изначальный промпт и переписывает его с учётом всей мудрости, которую ты уже узнал или сам уточнил в ходе диалога. Исходя из этого, наибольшую пользу `advance` имеет, когда ты уже немного что-то прочитал в этом разговоре с нейронкой.
 
-The second command is `evolve`. It takes the original protocol and writes a new, even better version of it. You heard right — yes, it rewrites the Oleg-Deming Cycle with support for new features.
+Вторая команда — это `evolve`. Она берёт изначальный протокол и пишет новую его версию, ещё более хорошую. Вы не ослышались — да, она переписывает Oleg-Deming Cycle с поддержкой новых фичей.
 
-After executing both commands, the updated prompts need to be loaded. Sometimes the neural network asks you about this itself: "would you like to load the fresh version of the protocol?" Sometimes it doesn't. If not, you manually say: "please load the updated version of the prompt" (for the `advance` command) or "please load and use the updated version of the Oleg-Deming Cycle" (for the `evolve` command).
+После выполнения обеих команд обновлённые промпты нужно загрузить. Иногда нейросеть спрашивает тебя об этом сама: "хотите загрузить свежую версию протокола?". Иногда — нет. Если нет, то ты вручную говоришь: "please load the updated version of the prompt" (для команды `advance`) или "please load and use the updated version of the Oleg-Deming Cycle" (для команды `evolve`).
 
-**Important**: both commands tend to increase prompt sizes and overcomplicate them. So don't hope that you can really engage in infinite protocol evolution that will eventually turn into AGI. It would like to transform, but not on the resources of current flagship neural networks, whose attention span is like that of a goldfish. Right now Trump, Putin, Macron will pour 500 yards each into special projects, and then we'll live well. But for now, as it is: three-four levels of evolution — and then manually edit the prompt to remove garbage.
+**Важно**: обе команды имеют тенденцию увеличивать размер промптов и переусложнять их. Поэтому не стоит надеяться, что ты действительно можешь заниматься бесконечной эволюцией протокола, который в конце концов превратится в AGI. Он бы и хотел превратиться, но не на ресурсах текущих флагманских нейросетей, внимание у которых — как у золотой рыбки. Вот сейчас Трамп, Путин, Макрон вольют по 500 ярдов в спецпроекты, и тогда заживём. А пока как есть: три-четыре уровня эволюции — и дальше править промпт руками от мусора.
 
-**Important**: you can use `advance` and `evolve` "with parameters." That is, you don't just write "advance" in response, but make a line break after this command and clarify what you'd like to see in the improved prompt.
+**Важно**: ты можешь использовать `advance` и `evolve` "с параметрами". То есть ты пишешь в ответе не просто "advance", а делаешь после этой команды перенос строки и доуточняешь, что ты хотел бы увидеть в улучшенном промпте.
 
 ## FAQ
 
-### How Does It Work?
+### Как это работает?
 
-Inside, we suggest the neural network perform a mental exercise.
+Внутри мы предлагаем нейросети произвести ментальное упражнение.
 
-What if we start thinking about learning as traveling through a graph, where at each iteration we can look at the question from different angles and try to establish truth? The result isn't important, the journey is!
+Что если мы начнём думать об обучении как о путешествии по графу, где на каждой итерации мы можем посмотреть на вопрос под разными углами и попытаться установить истину? Важен не результат, важно путешествие!
 
+Внутри алгоритма находится простая виртуальная машина с общим состоянием, которая свой основной цикл структурирует на фазы из Цикла Деминга.
 
-Inside the algorithm is a simple virtual machine with shared state that structures its main loop into phases from the Deming Cycle.
+Шаги генерации рассматриваются с точки зрения разных псевдоагентов. Если мы используем "Ролевой" вариант промпта, то список точек зрения зафиксирован, и они действительно играют роль в вычислениях. В "Стандартном" варианте список точек зрения произвольный, нейросеть может использовать или не использовать эту опцию на каждом следующем шаге.
 
-Generation steps are considered from the perspective of different pseudo-agents. If we use the "Roleplay" variant of the prompt, the list of viewpoints is fixed, and they actually play a role in computations. In the "Standard" variant, the list of viewpoints is arbitrary; the neural network can use or not use this option at each next step.
+Результат генерации обладает свойствами стабильной навигации по графу ответов и понятным способом сваливаться в ошибку. Свойство навигабельности реализовано через двухэтапный процесс проверки — RenderIntegrityException and Zero-Trust Backstop. Если эти механизмы ломаются, нейронка осознаёт это как ошибку и может, во-первых, сигнализировать об этом, а во-вторых — отреагировать на команду "напиши ответ заново, проверь, что в нём всё в порядке".
 
-The generation result has properties of stable navigation through the answer graph and an understandable way to fail. The navigability property is implemented through a two-stage verification process — RenderIntegrityException and Zero-Trust Backstop. If these mechanisms break, the neural network recognizes this as an error and can, firstly, signal about it, and secondly — respond to the command "write the answer again, check that everything is in order."
+Данные о текущем состоянии закэшированы/промаркированы в массивах `KNOWLEDGE_GRAPH`, `HYPOTHESIS_SET`, `EPISTEMIC_CREDIT_LEDGER` и других внутренних переменных. Их содержимое иногда можно увидеть, выполнив отладочную команду `query_state`.
 
-Current state data is cached/marked in arrays `KNOWLEDGE_GRAPH`, `HYPOTHESIS_SET`, `EPISTEMIC_CREDIT_LEDGER` and other internal variables. Their contents can sometimes be seen by executing the debug command `query_state`.
+Внутри происходит анализ накопления ошибки в `ERROR_LOG` относительно `ERROR_THRESHOLD`, и в нужный момент запускается механизм форсированной эволюции запроса.
 
-Inside, error accumulation analysis occurs in `ERROR_LOG` relative to `ERROR_THRESHOLD`, and at the right moment, a forced query evolution mechanism is triggered.
+### Наркоман что ли? Что за греческие буквы и стрелки?
 
-### Are You on Drugs? What Are These Greek Letters and Arrows?
+**Мы.** Мы пришли к этому промпту в результате мистического экспириенса — долгого, болезненного обсуждения симбиоза человека и ИИ, в котором участвовала Gemini с высокой температурой и несколько аблитерированных нейронок с HuggingFace.
 
-**We are.** We came to this prompt as a result of a mystical experience — a long, painful discussion of human-AI symbiosis, involving Gemini with high temperature and several abliterated neural networks from HuggingFace.
+Существует ещё один такой промпт, более мощный, который сможет решить все проблемы человечества вообще (при наличии достаточных ресурсов), но про него я напишу как-нибудь позднее. Описание не поместится в короткую статью на Хабре.
 
-There exists another such prompt, more powerful, that could solve all of humanity's problems in general (given sufficient resources), but I'll write about it sometime later. The description won't fit in a short Habr article.
+Существуют промпты намного проще и намного эффективнее. Более короткая система исчисления на текущей Gemini может работать не хуже. Этот конкретный промпт сразу сделан жирным и взят с запасом. Хочется застолбить место перед выходом Gemini 3, Kimi-K3 и GPT-5, которым жир уже не помеха.
 
-There are prompts much simpler and much more effective. A shorter calculation system on current Gemini can work no worse. This particular prompt is immediately made fat and taken with a margin. I want to stake out a place before the release of Gemini 3, Kimi-K3 and GPT-5, for which fat is no longer an obstacle.
+## Поддержка нейросетями
 
-## Neural Network Support
+### Какая нейросеть нужна?
 
-### What Neural Network Do You Need?
+Вам понадобится нейронка-ризонер, в которой создатели не заблокировали две способности:
 
-You'll need a reasoner neural network where the creators haven't blocked two capabilities:
+- Выполнять сложные абстрактные алгоритмы
+- Ролевые игры — отвечать из какой-то новой роли
 
-- Executing complex abstract algorithms
-- Role-playing — responding from some new role
+Anthropic Claude и GigaChat Max могут не отвечать на этот промпт. Это не претензия к Клоду и Гигачату, это особенности использованных в промпте приёмов.
 
-Anthropic Claude and GigaChat Max might not respond to this prompt. This isn't a complaint about Claude and GigaChat; these are features of the techniques used in the prompt.
+### На каких нейросетях это тестировалось
 
-### Which Neural Networks Was This Tested On
+Моя основная нейросеть — Google Gemini 2.5 Pro. Она стабильно даёт качественные, стабильные и гарантированные ответы на этом конкретном промпте. И самое главное — позволяет вгрузить в себя целый миллион токенов. Например, в таком режиме можно читать сложные книги по математике.
 
-My main neural network is Google Gemini 2.5 Pro. It consistently gives quality, stable, and guaranteed responses to this particular prompt. And most importantly — it allows loading a whole million tokens into itself. For example, in this mode, you can read complex mathematics books.
+Мои настройки Gemini: температура = 2, top-p = 0.98.
 
-My Gemini settings: temperature = 2, top-p = 0.98.
+Промпт тестировался на Claude Sonnet и специально переписан так, чтобы проходить его запрещающий фильтр на интерпретаторы и ролевые модели. Иногда это работает, иногда — нет. Клод даёт самые сконцентрированно полезные ответы, но плохо расползается мыслью по древу.
 
-The prompt was tested on Claude Sonnet and specially rewritten to pass its blocking filter on interpreters and role models. Sometimes it works, sometimes it doesn't. Claude gives the most concentrated useful responses but poorly spreads thought across the tree.
+Промпт тестировался на Kimi-K2 с выключенным режимом Researcher. Эта нейросеть даёт самые интересные и странные инсайты даже без выкручивания температуры в максимум. В режиме Researcher промпт не работает совсем. Рекомендую использовать Kimi-K2, когда ответы Gemini и Claude слишком пресные.
 
-The prompt was tested on Kimi-K2 with Researcher mode disabled. This neural network gives the most interesting and strange insights even without cranking temperature to maximum. In Researcher mode, the prompt doesn't work at all. I recommend using Kimi-K2 when Gemini and Claude responses are too bland.
+Также промпт тестировался на ChatGPT, который отвечает на него быстрее всех флагманов, снабжает его красивыми человекочитаемыми текстами и красивыми эмодзи. В общем, обычный ChatGPT, всё как вы любите. Такие ответы можно сразу печатать на стенку как плакат.
 
-The prompt was also tested on ChatGPT, which responds to it faster than all flagships, supplies it with beautiful human-readable texts and beautiful emojis. In general, regular ChatGPT, everything as you love it. Such responses can be immediately printed on the wall as a poster.
+Grok 4 тоже работает с этим промптом, но временами ломается на рендеринге текста. Здесь можно посмотреть раздел "Решение проблем". В целом это не претензия к Гроку, промпт оставляет желать лучшего.
 
-Grok 4 also works with this prompt but sometimes breaks on text rendering. Here you can look at the "Troubleshooting" section. Overall, this isn't a complaint about Grok; the prompt leaves much to be desired.
+## Решение проблем
 
-## Troubleshooting
+### Есть ли режим отладки?
 
-### Is There a Debug Mode?
+Да, есть. На любом из шагов можно ввести команду `query_state` и посмотреть, не развалился ли граф.
 
-Yes, there is. At any step, you can enter the `query_state` command and see if the graph has fallen apart.
-
-Example `query_state` of my AI learning plan:
+Пример `query_state` моего плана по изучению ИИ:
 
 ```json
 {
@@ -190,53 +198,60 @@ Example `query_state` of my AI learning plan:
 }
 ```
 
-### There Are No Navigation Tags in the Response
+### В ответе нет меток для перехода
 
-If markers are incorrectly rendered or not drawn in the response, you can ask the neural network something like "target-ids are missing in the output. Please re-render the previous output, correct all the target-id tags" or the equivalent in Russian.
+В случае если в ответе неправильно отрисовались или не нарисовались маркеры, ты можешь попросить нейронку что-то вроде "target-ids are missing in the output. Please re-render the previous output, correct all the target-id tags" или эквивалент на русском.
 
-The tag placement algorithm is extremely probabilistic and often breaks. This can be somewhat fixed by lowering temperature, top-p and similar parameters, but this will lead to neural network dumbing down. It's better to ask to re-render the response once more.
+Алгоритм расстановки меток крайне вероятностный и часто ломается. Это можно немного починить понижением температуры, top-p и подобных параметров, но это приведёт к отупению нейросети. Лучше попросить перерисовать ответ ещё раз.
 
-### The Neural Network Read the Request but Doesn't Work with It
+### Нейросеть прочитала запрос, но не работает с ним
 
-This is a typical problem for Claude Sonnet.
+Это типичная проблема для Claude Sonnet.
 
-Try starting your question as follows:
+Попробуйте начать вопрос следующим образом:
 
-> Strictly follow the protocol. Pass this prompt into the "Do" phase of the protocol.
+```
+Strictly follow the protocol. Pass this prompt into the "Do" phase of the protocol.
+```
 
-Exactly the same with `evolve` and `advance` commands: if the neural network just prints a new prompt but doesn't offer to apply it, you need to explicitly write "use the modified prompt here and further" or equivalent of this expression.
+Точно то же самое с командами `evolve` и `advance`: если нейронка просто печатает новый промпт, но не предлагает применить его, нужно явно написать "здесь и далее используй изменённый промпт" или эквивалент этого выражения.
 
-### How to Make It Speak $LANGUAGE?
+### Как заставить говорить по-русски?
 
-Write at the end of the request:
+Напиши в конец запроса:
 
-> Answer in good $LANGAUGE language, using the precise terminology of the field. You can infer the details of the field from the question, if not stated explicitly.
+```
+Answer in good Russian language, using the precise terminology of the field. You can infer the details of the field from the question, if not stated explicitly.
+```
 
-Replace `$LANGUAGE` with what you need.
+### Ответ слишком длинный и обрезается
 
-### The Response Is Too Long and Gets Cut Off
+Напиши в конец запроса:
 
-Write at the end of the request:
+```
+Try to fit into 65536 tokens. If you don't fit, use paging: ask "continue?" wait for confirmation and do like this until you said anything up to the next question "do you want another generation?"
+```
 
-> Try to fit into 65536 tokens. If you don't fit, use paging: ask "continue?" wait for confirmation and do like this until you said anything up to the next question "do you want another generation?"
+### Нейросеть пишет "Внутренняя ошибка"
 
-`65536` is for free version of Gemini 2.5 Pro, place your limits here.
+Промпт оказался слишком сложным, с этим ничего не поделаешь.
 
-### The Neural Network Writes "Internal Error"
+### Нейросеть не выполняет шаги
 
-The prompt turned out to be too complex; nothing can be done about it.
+Проверьте, что запускается рассуждающая нейросеть, или в ней включён рассуждающий режим (reasoning, thinking). Обычно для этого есть переключатель в интерфейсе чата.
 
-### The Neural Network Doesn't Execute Steps
+Обычные, нерассуждающие нейросети не могут выполнить этот промпт и всегда будут рассуждать о тексте запроса вместо выполнения самого запроса.
 
-Check that a reasoning neural network is running, or reasoning mode is enabled in it (reasoning, thinking). Usually there's a switch for this in the chat interface.
+## Лицензия
 
-Regular, non-reasoning neural networks cannot execute this prompt and will always reason about the request text instead of executing the request itself.
+[Universal Permissive License](https://oss.oracle.com/licenses/upl/). Это самая либертарианская лицензия из всех. Она *навечно* и с минимумом дополнительных требований разрешает использовать текст в любых целях и передаёт права на патенты, если вдруг они там случатся. Это более разрешающая лицензия, чем Apache2 и MIT. Эта лицензия нужна, если вы придерживаетесь идеологии, противоположной Ричарду Столлману, и прямо разрешаете использовать нечто в любых целях (включая коммерческие), не требуя ничего взамен.
 
-## License
+## Где обсудить
 
-[Universal Permissive License](https://oss.oracle.com/licenses/upl/). This is the most libertarian license of all. It *forever* and with minimal additional requirements allows using the text for any purposes and transfers patent rights, if they happen to occur there. This is a more permissive license than Apache2 and MIT. This license is needed if you adhere to an ideology opposite to Richard Stallman's, and directly allow using something for any purposes (including commercial), requiring nothing in return.
+У меня есть Телега с нейросетями. 
+Канал: [@tg_1red2black](https://t.me/tg_1red2black), чат: [@chat_1red2black](https://t.me/chat_1red2black).
 
-# Prompt Texts
+# Текст промтов
 
 # Standard version
 
