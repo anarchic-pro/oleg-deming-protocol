@@ -1,3 +1,5 @@
+# AI Prompt as a Terminal: A Universal Prompt to Learn Anything
+
 This article answers the question: how to learn anything with neural networks without putting effort into writing prompts. It presents an interactive terminal-like interface directly inside your AI assistant's chat interface, where you can navigate the conversation with "arrow keys". Also, I'm working on creating an actual terminal app for this (stay tuned).
 
 At some point, the thought came to me that with the advent of neural networks, books have become obsolete. The "books" of the future are specially encoded knowledge inside neural networks. Learning should happen through dialogue with neural networks.
@@ -238,7 +240,7 @@ Regular, non-reasoning neural networks cannot execute this prompt and will alway
 
 # Prompt Texts
 
-# Standard version
+## Standard version
 
 ```
 ### License
